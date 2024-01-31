@@ -11,8 +11,8 @@ public class SetterInjectedController {
     private GreetingService greetingService;
 
     @Autowired
-    @Qualifier("setterGreetingService") //Can be applied at the method level or parameter level seeing there is only one parameter
-    public void setGreetingService(/*@Qualifier("setterGreetingService")*/ GreetingService greetingService) {
+    @Qualifier("setterGreetingService")
+    public void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 

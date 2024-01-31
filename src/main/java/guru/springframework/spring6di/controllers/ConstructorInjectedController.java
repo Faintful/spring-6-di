@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
 
-    @Autowired // Note: @Qualifier cannot be applied at the constructor level
+    @Autowired
     public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }

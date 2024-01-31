@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 public class PropertyInjectedController {
 
     @Autowired
-    @Qualifier("propertyGreetingService") // Only valid syntax
+    @Qualifier("propertyGreetingService")
     public GreetingService greetingService;
 
     public String sayHello() {
