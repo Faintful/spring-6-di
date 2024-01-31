@@ -7,7 +7,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles("EN")
+//@ActiveProfiles("EN") // Commented out to demonstrate the use of default profiles
 @SpringBootTest
 class MyL10nControllerTest {
 
