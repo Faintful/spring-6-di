@@ -1,4 +1,4 @@
-package guru.springframework.spring6di.controllers.l10n;
+package guru.springframework.spring6di.controllers.env;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,16 +7,15 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles("EN")
 @SpringBootTest
-class MyL10nControllerTest {
+@ActiveProfiles("uat")
+class EnvironmentControllerTest {
 
     @Autowired
-    MyL10nController myL10nController;
+    EnvironmentController environmentController;
 
     @Test
-    void sayHello() {
-        System.out.println(myL10nController.sayHello());
+    void getData() {
+        System.out.println(environmentController.getData());
     }
-
 }
