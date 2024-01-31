@@ -21,6 +21,6 @@ class ConstructorInjectedControllerTest {
 
     @Test
     void sayHello() {
-        constructorInjectedController.sayHello();
+        System.out.println(constructorInjectedController.sayHello());
     }
 }
