@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 @Profile({"EN", "default"}) // "default" is reserved as a name for profiles. Its use is when there is no other active profile.
 @Service("l10nService")
 public class EnglishGreetingService implements GreetingService {
+    public EnglishGreetingService() {
+        System.out.println("testing");
+    }
 
     @Override
     public String sayGreeting() {
